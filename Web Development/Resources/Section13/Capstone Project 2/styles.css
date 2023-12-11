@@ -1,3 +1,30 @@
+/* Adjusting font size for different headers */
+h1 {
+    font-size: 1.5em; /* Adjust the size as needed */
+}
+
+h2 {
+    font-size: 1.6em; /* Adjust the size as needed */
+}
+
+h3 {
+    font-size: 1.17em; /* Adjust the size as needed */
+}
+
+body h4 {
+    font-family: 'YourCustomFont', Arial, sans-serif;
+    font-size: 1em; /* Adjust the size as needed */
+    font-weight: bold; /* Adjust the boldness as needed */
+}
+
+
+
+/* Adjusting boldness for headers */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* Adjust the boldness as needed */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,15 +40,20 @@ body {
 #hero {
     background-color: #190482;
     color: #fff;
-    padding: 50px 0;
+    padding: 15px;
     text-align: center;
 }
 
 nav {
     background-color: #7752FE;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    position: fixed; /* Make the navigation bar fixed */
+    width: 100%; /* Take up the full width of the viewport */
+    top: 0; /* Align it to the top of the viewport */
+    z-index: 1000;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -59,3 +91,35 @@ footer {
     background-color: #7752FE;
     color: #fff;
 }
+
+#hero,
+#about,
+#projects,
+#resume,
+#contact {
+    scroll-margin-top: 60px; /* Adjust as needed based on the height of your fixed navbar */
+}
+
+
+
+.card {
+    background: url('resources/java_icon.png') center / contain no-repeat; /* Set background image properties */
+    background-color: rC2D9FF; /* Adjust the last value (alpha) for transparency */
+    color: #000; /* Set text color to ensure contrast with the background */
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    border: none; /* Remove border */
+}
+
+.card-body {
+    background-color: transparent; /* Make the card body transparent */
+}
+
+.card-title,
+.card-text,
+.btn {
+    color: #000000; /* Set text color to ensure contrast with the background */
+}
+
+
+
