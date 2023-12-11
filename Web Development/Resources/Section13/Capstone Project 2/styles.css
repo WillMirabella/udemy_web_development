@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C2D9FF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero {
+    background-color: #190482;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #7752FE;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block; /* Make each link a block element */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #7752FE;
+    color: #fff;
+}
